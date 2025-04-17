@@ -23,6 +23,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print working directory
+      run: |
+        pwd
+
+    steps:
     - name: List files in directory
       run: |
         ls -lhart ./artifacts
