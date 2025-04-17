@@ -27,7 +27,7 @@ jobs:
       run: |
         pwd
 
-    - name: Download artifact
+    - name: Download text file
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact  # Name of the artifact to download
@@ -37,6 +37,6 @@ jobs:
       run: |
         ls -lhart
 
-    - name: Cat Text File
+    - name: Display content of the text file
       run: |
         cat ./artifacts/hello.txt
