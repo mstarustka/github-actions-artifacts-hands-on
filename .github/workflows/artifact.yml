@@ -31,7 +31,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact  # Name of the artifact to download
-        path: ./artifacts/hello.txt  # Destination folder (optional)
+        path: ./artifacts  # Destination folder (optional)
 
     - name: List files in directory
       run: |
