@@ -27,15 +27,15 @@ jobs:
       run: |
         pwd
 
-    - name: List files in directory
-      run: |
-        ls -lhart
-
     - name: Download artifact
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact  # Name of the artifact to download
         path: ./artifacts/hello.txt  # Destination folder (optional)
+
+    - name: List files in directory
+      run: |
+        ls -lhart
 
     - name: Cat Text File
       run: |
